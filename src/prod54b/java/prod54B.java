@@ -1,7 +1,7 @@
 package prod54b.java;
 import java.util.*;
 
-public class prod54b {
+public class prod54B {
     public static void main(String[] args){
         Scanner Keyboard = new Scanner(System.in);
 
