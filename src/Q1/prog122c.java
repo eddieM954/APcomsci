@@ -7,7 +7,7 @@ public class prog122c {
         while (num < 10){
             num += 2;
             num2 += 2;
-            System.out.println(num + num2);
+            System.out.println(num + "   "  + num2);
         }
     }
 }
