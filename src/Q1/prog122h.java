@@ -11,7 +11,8 @@ public class prog122h {
             int sqr = (int)Math.pow(num, 2);
             double root = Math.sqrt(num);
             int cube = (int)Math.pow(num, 3);
-            System.out.println(num + "    " + sqr + "    " + String.format("%.4f", root) + "    "  + root + "     "+    cube);
+            double fourth = Math.pow(num, .25);
+            System.out.println(num + "            " + sqr + "         " + String.format("%.4f", root) + "      "+    cube  +"         "+  String.format("%.4f", fourth));
 
 
 
