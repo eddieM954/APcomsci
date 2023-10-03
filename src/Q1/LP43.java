@@ -6,14 +6,15 @@ public class LP43 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the amount of eggs: ");
-        int egg = input.nextInt();
-        double dozen = 12;
-        double bread = .5;
-
-        if (egg<48 && egg>0){
-            (egg /= dozen) *= .5;
-            System.out.print(egg);
-
+        int eggs = input.nextInt();
+        double dozen = eggs / 12;
+        double trdozen = .5;
+        double sixdozen = .45;
+        double eledozen = .4;
+        double modozen = .35;
+        if (dozen < 4){
+            System.out.println("The bill is equal to $" + (dozen* trdozen));
         }
+
     }
 }
