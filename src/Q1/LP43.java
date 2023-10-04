@@ -15,6 +15,12 @@ public class LP43 {
         if (dozen < 4){
             System.out.println("The bill is equal to $" + (dozen* trdozen));
         }
+        if (dozen > 4 && dozen < 6) {
+            System.out.println("The bill is equal to $" + (dozen * sixdozen));
+        }
+        if (dozen > 6 && dozen < 11){
+            System.out.println("The bill is eqaul to $" + dozen * eledozen);
+        }
 
     }
 }
