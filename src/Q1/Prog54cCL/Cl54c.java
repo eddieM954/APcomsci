@@ -1,11 +1,11 @@
 package Q1.Prog54cCL;
 
 public class Cl54c {
-    private int myRadius;
+    private double myRadius;
     private double myArea;
     private double myCircum;
 
-    public Cl54c(int radius,double area, double circum){
+    public Cl54c(double radius){
         myRadius = radius;
         myArea = 0;
         myCircum = 0;
