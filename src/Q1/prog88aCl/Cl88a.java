@@ -26,7 +26,42 @@ public class Cl88a {
     public void calc(){
         mySum = myNum1 + myNum2;
         myPro = myNum1 * myNum2;
+        if (myNum1 > myNum2) {
+            myMax = myNum1;
+        } else {
+            myMax = myNum2;
+        }
+        if (myMax == myNum1) {
+            myMin = myNum2;
+        } else {
+            myMin = myNum1;
+        }
 
+        myDiff = myMax - myMin;
+        myAbs = Math.abs(myDiff);
+        myAverage = (myNum1 + myNum2)/ 2;
+
+    }
+    public int getsum(){
+        return mySum;
+    }
+    public int getpro(){
+        return myPro;
+    }
+    public int getdiff(){
+        return myDiff;
+    }
+    public double getaverage(){
+        return myAverage;
+    }
+    public int getmax(){
+        return myMax;
+    }
+    public int getmin(){
+        return myMin;
+    }
+    public int getabs(){
+        return myAbs;
     }
 
 }
