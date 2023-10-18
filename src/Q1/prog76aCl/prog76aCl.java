@@ -15,5 +15,8 @@ public class prog76aCl {
 
         System.out.println("       "+ num);
         System.out.println("      "+ "X9");
+        System.out.println("      " + num2);
+        System.out.println("       X12345679");
+        System.out.println("    "+ total);
     }
 }
