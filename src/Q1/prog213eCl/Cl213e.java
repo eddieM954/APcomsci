@@ -42,6 +42,6 @@ public class Cl213e {
 
 
     public String toString(){
-        return String.format("Age Group  Distribution  Percent ", myAgetwenty);
+        return String.format("Age<20",myAgetwenty);
     }
 }

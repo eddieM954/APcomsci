@@ -7,13 +7,15 @@ import java.io.IOException;
 public class prog213e {
     public static void main(String[] args) {
         try{
-            Scanner input = new Scanner(new File("prog213e.txt"));
+            Scanner input = new Scanner(new File("Langdat/prog213e.txt"));
 
             while(input.hasNext()){
-                int myAge = input.nextInt();
-                Cl213e wowza = new Cl213e(myAge);
+                int age = input.nextInt();
+                Cl213e wowza = new Cl213e(age);
                 wowza.calc();
-                System.out.print(wowza);
+                int myagetwenty = wowza.getMyagetwenty();
+                System.out.println(myagetwenty);
+
             }
         }catch (IOException e){
             System.out.print("");
