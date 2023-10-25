@@ -14,7 +14,9 @@ public class prog213e {
                 Cl213e wowza = new Cl213e(age);
                 wowza.calc();
                 int myagetwenty = wowza.getMyagetwenty();
-                System.out.println(myagetwenty);
+                int mydis = wowza.getMyDis();
+                int myage20to39 = wowza.getMyAge20to39();
+                System.out.println(myagetwenty + mydis);
 
             }
         }catch (IOException e){

@@ -25,12 +25,13 @@ public class Cl213e {
     }
 
     public void calc(){
+
+        while (myAge < 20 ){ myAgetwenty += 1;}
+        while (myAge > 19 && myAge <= 39 ) myAge20to39 += 1;
+        while (myAge > 39 && myAge <= 59) myAge40to59 += 1;
+        while (myAge > 59 && myAge <= 79) myAge60to79 += 1;
+        while (myAge > 79) myAge79nup += 1;
         myDis = myAgetwenty + myAge20to39 + myAge40to59 + myAge60to79 + myAge79nup;
-        if (myAge < 20 ) myAgetwenty += 1;
-        else if (myAge > 19 && myAge <= 39 ) myAge20to39 += 1;
-        else if (myAge > 39 && myAge <= 59) myAge40to59 += 1;
-        else if (myAge > 59 && myAge <= 79) myAge60to79 += 1;
-        else if (myAge > 79) myAge79nup += 1;
 
 
     }
@@ -39,9 +40,14 @@ public class Cl213e {
 
     public int getMyage(){return myAge; }
     public int getMyagetwenty(){ return myAgetwenty;}
+    public int getMyDis(){return myDis;}
+    public int getMyAge20to39(){return myAge20to39;}
+    public int getMyage40to59(){return myAge40to59;}
+    public int getMyage60to79(){return myAge60to79;}
+
 
 
     public String toString(){
-        return String.format("Age<20",myAgetwenty);
+        return String.format("Age<20",myAgetwenty,myDis);
     }
 }
