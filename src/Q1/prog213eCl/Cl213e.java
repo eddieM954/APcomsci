@@ -27,10 +27,10 @@ public class Cl213e {
     public void calc(){
 
         while (myAge < 20 ){ myAgetwenty += 1;}
-        while (myAge > 19 && myAge <= 39 ) myAge20to39 += 1;
-        while (myAge > 39 && myAge <= 59) myAge40to59 += 1;
-        while (myAge > 59 && myAge <= 79) myAge60to79 += 1;
-        while (myAge > 79) myAge79nup += 1;
+        while (myAge > 19 && myAge <= 39 ) myAge20to39++ ;
+        while (myAge > 39 && myAge <= 59) myAge40to59++ ;
+        while (myAge > 59 && myAge <= 79) myAge60to79++;
+        while (myAge > 79) myAge79nup++;
         myDis = myAgetwenty + myAge20to39 + myAge40to59 + myAge60to79 + myAge79nup;
 
 

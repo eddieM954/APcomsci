@@ -15,7 +15,7 @@ public class Cl213f {
     }
 
     public String toString(){
-        return String.format("The Cost of", myKwh);
+        return String.format("The Cost of " + myKwh + "is" + myCost);
     }
 
 }

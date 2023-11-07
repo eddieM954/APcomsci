@@ -7,7 +7,7 @@ import java.io.IOException;
 public class prog213e {
     public static void main(String[] args) {
         try{
-            Scanner input = new Scanner(new File("Langdat/prog213e.txt"));
+            Scanner input = new Scanner(new File("langdat/prog213e.dat"));
 
             while(input.hasNext()){
                 int age = input.nextInt();
@@ -16,7 +16,7 @@ public class prog213e {
                 int myagetwenty = wowza.getMyagetwenty();
                 int mydis = wowza.getMyDis();
                 int myage20to39 = wowza.getMyAge20to39();
-                System.out.println(myagetwenty + mydis);
+                System.out.println(age);
 
             }
         }catch (IOException e){
