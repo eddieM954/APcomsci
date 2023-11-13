@@ -11,12 +11,11 @@ public class prog213e {
 
             while(input.hasNext()){
                 int age = input.nextInt();
-                Cl213e wowza = new Cl213e(age);
-                wowza.calc();
-                int myagetwenty = wowza.getMyagetwenty();
-                int mydis = wowza.getMyDis();
-                int myage20to39 = wowza.getMyAge20to39();
-                System.out.println(age);
+                Cl213e wow = new Cl213e(age);
+                wow.calc();
+                System.out.println(wow);
+
+
 
             }
         }catch (IOException e){
