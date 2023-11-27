@@ -1,21 +1,24 @@
 package Q2.Prog213fArray;
 
 public class Cl213f {
-    private double myKwh;
     private double myCost;
+    private double myHours;
+    private double myCents;
 
-    public Cl213f(double kwh){
-        myKwh = kwh;
+    public Cl213f(int hours){
         myCost = 0;
+        myHours = hours;
+        myCents = 0;
     }
     public void calc(){
-        if (myKwh < 2001){myCost *= .07;}
-        else if (myKwh > 2000 && myKwh < 10001){myCost *= .05;}
-        else if (myKwh > 10000){myCost *= .04;}
+        if (myHours < 0) System.out.println("Error");
+        else if (myHours < 2001 && myHours > 0) myCents = .07 ;
+        else if (myHours > 1999 && myHours < 8001) myCents = .05;
+        else if (myHours > 7999) myCents = .04;
+        myCost = myCents *= myHours;
     }
-
     public String toString(){
-        return String.format("The Cost of " + myKwh + "is" + myCost);
+        return String.format("The cost of %.2f\tis %.2f  ", myHours,myCost);
     }
 
 }
