@@ -42,12 +42,12 @@ public class Cl435a {
         else if (myGate == 7)myToll = 5.50;
         else if (myGate == 8)myToll = 6.00;
 
-        myCost = myToll * myCost;
+        myCost = myToll * myType;
 
 
 
     }
     public String toString(){
-        return String.format("Car Type\tBase Toll\tFactor\tCost\n" + car + "\t$" + myToll +"\t"+ myType + "\t" + myCost  );
+        return String.format("" + car + "\t$" + myToll +"\t"+ myType + "\t$%.2f" , myCost  );
     }
 }
