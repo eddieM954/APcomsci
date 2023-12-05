@@ -7,8 +7,17 @@ import java.util.Scanner;
 public class prog410t {
     public static void main(String[] args) {
         try{
-            Scanner input = new Scanner(new File("Langdat/survey2.dat"));
-            Scanner red = new Scanner(new File("Langdat/survey.dat"));
+            Scanner red = new Scanner(new File("Langdat/survey2.dat"));
+            Scanner input = new Scanner(new File("Langdat/survey.dat"));
+
+
+            while (input.hasNext()){
+                int id = red.nextInt();
+                double income = red.nextInt();
+                int members = red.nextInt();
+                Cl410t wowza = new Cl410t(id,income, members);
+                System.out.println(wowza);
+            }
 
             while (input.hasNext()){
                 int id = input.nextInt();
@@ -16,12 +25,10 @@ public class prog410t {
                 int members = input.nextInt();
                 Cl410t wow = new Cl410t(id, income, members);
                 System.out.println(wow);
+
+
             }
-            while (red.hasNext()){
-                int id = red.nextInt();
-                double income = red.nextDouble();
-                int members = red.nextInt();
-            }
+
         }catch(IOException e){
             System.out.println("Cant find data file");
 
