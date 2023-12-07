@@ -2,10 +2,10 @@ package Q2.Prog410t;
 
 public class Cl410t {
     private int myId;
-    private double myIncome;
+    private int myIncome;
     private int myMembers;
 
-    public Cl410t ( int id, double income, int members){
+    public Cl410t ( int id, int income, int members){
         myId = id;
         myIncome = income;
         myMembers = members;
