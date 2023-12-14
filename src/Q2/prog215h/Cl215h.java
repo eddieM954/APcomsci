@@ -9,7 +9,9 @@ public class Cl215h {
         myAverage = average;
     }
 
-
+    public String toString(){
+        return String.format("%.1f\n", myScore);
+    }
     public double getScore(){return myScore;}
     public double getAverage(){return myAverage;}
 

@@ -15,6 +15,7 @@ public class LP310 {
         ClLP310 wow = new ClLP310(num1, num2, num3);
         wow.calc();
         System.out.println(wow);
+
     }
 
 }
