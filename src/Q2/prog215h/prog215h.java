@@ -23,7 +23,7 @@ public class prog215h {
                 Cl215h me = list.get(lcv);
             }
             for (Cl215h me : list){
-                System.out.print(me.getScore() + " ");
+                System.out.print(me.getScore() +" ");
             }
 
         }catch(IOException e){
