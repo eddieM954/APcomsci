@@ -17,6 +17,6 @@ public class Cl215i {
         myMPG = myMiles / myGallons;
     }
     public String toString(){
-        return String.format("Vehicle\tMiles\tGallons\tMPG\n%d\t%.2f\t%.2f\t%.1f",myVehicle,myMiles,myGallons,myMPG);
+        return String.format("%d\t%.2f\t%.2f\t%.1f",myVehicle,myMiles,myGallons,myMPG);
     }
 }
