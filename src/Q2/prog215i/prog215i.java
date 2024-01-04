@@ -14,9 +14,12 @@ public class prog215i {
                 double miles = input.nextDouble();
                 double gallons = input.nextDouble();
                 double mpg = 0.0;
+
                 Cl215i wow = new Cl215i(vehicle, miles, gallons);
                 wow.calc();
                 System.out.println(wow);
+
+
 
 
 
