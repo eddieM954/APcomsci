@@ -7,21 +7,40 @@ import java.util.Scanner;
 public class prog465a {
     public static void main(String[] args) {
         try{
-            Scanner input = new Scanner(new File("langdat/Prog285b.dat"));
+            Scanner input = new Scanner(new File("langdat/prog465a.dat"));
 
             int[][]mat = new int[5][5];
             int[][]rat = new int[5][5];
+            int[][]p = new int[4][4];
             for(int r = 0; r < mat.length-1; r++)
                 for(int c =0; c < mat[r].length-1; c++)
-                    mat[5][5] = input.nextInt();
-            for (int r =0;r< mat.length-1; r++)
+                    mat[r][c] = input.nextInt();
+            for (int r =0;r< mat.length-1; r++){
+                for (int c = 0; c < mat[0].length-1;c++ ){
+                    System.out.print(mat[r][c] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
 
 
 
 
             for(int d = 0; d < rat.length-1; d++)
                 for (int e = 0; e < rat[d].length-1;e++)
-                    rat[5][5]=input.nextInt();
+                    rat[d][e]=input.nextInt();
+            for(int d =0; d < rat.length-1; d++){
+                for (int e = 0; e < rat[0].length-1; e++){
+                    System.out.print(rat[d][e]+ " ");
+                }
+                System.out.println();
+            }
+
+            for (int lcv = 0; lcv < 4; lcv ++){
+                for (int i = 0; i < 4; i++){
+
+                }
+            }
 
         }catch(IOException e){
             System.out.println("Cant find data file");
