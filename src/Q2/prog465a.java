@@ -36,7 +36,7 @@ public class prog465a {
                 }
                 System.out.println();
             }
-
+            //Highest number matrix
             System.out.println();
             for (int lcv =0;lcv < mat.length-1; lcv++){
                 for (int i = 0; i < rat.length-1; i++){

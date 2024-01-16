@@ -85,6 +85,23 @@ public class BigArrayListCat {
             System.out.println();
 
 
+            // remove all cats under $26
+            for (int lcv = 0; lcv < cats.size(); lcv++){
+                if (cats.get(lcv).getCost()< 26){
+                    cats.remove(lcv);
+                    lcv--;
+                }
+
+            }
+            System.out.println("\n11. The Costs of the remaining cats are");
+            for (Cat c : cats)
+                System.out.print(c.getCost()+ " ");
+            System.out.println();
+
+
+
+
+
         }catch(IOException e){
             System.out.println("Cant find data file");
 
