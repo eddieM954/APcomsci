@@ -34,7 +34,7 @@ public class prog465c {
                 }
 
             }
-            System.out.print(sum);
+            System.out.print("The total of the edges is"+ sum);
 
 
         }catch(IOException e){
