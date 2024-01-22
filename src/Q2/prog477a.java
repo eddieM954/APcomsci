@@ -11,6 +11,11 @@ public class prog477a {
             int gender = input.nextInt();
             int grade = input.nextInt();
             int[][]mat = new int[6][4];
+            for(int lcv =0; lcv < mat.length-1; lcv++){
+                for(int i = 0; lcv < mat[lcv].length-1; i++){
+
+                }
+            }
 
 
         }catch(IOException e){
