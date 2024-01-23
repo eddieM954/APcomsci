@@ -1,4 +1,4 @@
-package Q2;
+package Q3;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,10 +10,12 @@ public class prog477a {
             Scanner input = new Scanner(new File("langdat/Prog477a.dat"));
             int gender = input.nextInt();
             int grade = input.nextInt();
-            int[][]mat = new int[6][4];
-            for(int lcv =0; lcv < mat.length-1; lcv++){
-                for(int i = 0; lcv < mat[lcv].length-1; i++){
+            int[][]male = new int[5][1];
+            for(int lcv =0; lcv < male.length-1; lcv++){
+                for(int i = 0; i < male[lcv].length-1; i++){
+                    if (gender == 1 && grade == 1){
 
+                    }
                 }
             }
 
