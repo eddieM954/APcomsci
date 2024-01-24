@@ -11,13 +11,21 @@ public class prog477a {
             int gender = input.nextInt();
             int grade = input.nextInt();
             int[][]male = new int[5][1];
+            int num = 0;
             for(int lcv =0; lcv < male.length-1; lcv++){
                 for(int i = 0; i < male[lcv].length-1; i++){
                     if (gender == 1 && grade == 1){
-
+                        male[lcv][i] = num++;
                     }
                 }
             }
+            for(int r = 0; r < male.length; r++){
+                for(int c = 0; c < male[0].length; c++){
+                    System.out.print(male[r][c]+ " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
 
 
         }catch(IOException e){
