@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-public class prog702a {
+public class prog702p {
     public static void main(String[] args) {
         try{
             Scanner input = new Scanner(new File("langdat/Prog702a.dat"));
@@ -35,13 +35,26 @@ public class prog702a {
             double value = 0;
             double avgStep =0;
             double avgSize = 0;
+            int cnt =0;
+            int cnt2 = 0;
+            int cnt3 = 0;
+
 
             for (animal x : list){
                 if (x instanceof hicca){
-                   // value += ((animal)x).getMoney();
+                    value += ((hicca)x).getMoney();
+                    cnt ++;
+                }
+                if (x instanceof beeper){
+                    String word = ((beeper)x).getEWord();
+                    cnt2++;
+                }
+                if (x instanceof wallie){
+                    avgStep += ((wallie)x).getSteps();
+                    cnt3++;
                 }
             }
-
+            System.out.println("The average value of the Hicca fur");
 
 
 
