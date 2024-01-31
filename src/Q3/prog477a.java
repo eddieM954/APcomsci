@@ -10,22 +10,14 @@ public class prog477a {
             Scanner input = new Scanner(new File("langdat/Prog477a.dat"));
             int gender = input.nextInt();
             int grade = input.nextInt();
-            int[][]male = new int[5][1];
-            int num = 0;
-            for(int lcv =0; lcv < male.length-1; lcv++){
-                for(int i = 0; i < male[lcv].length-1; i++){
-                    if (gender == 1 && grade == 1){
-                        male[lcv][i] = num++;
+            int[][]score = new int[5][2];
+            for(int lcv = 0; lcv < score.length; lcv++){
+                for(int i = 0; i < score[0].length; i++){
+                    if(gender == 1 && grade == 1 || gender == 2 && grade == 1){
+                        score[lcv][i]++;
                     }
                 }
             }
-            for(int r = 0; r < male.length; r++){
-                for(int c = 0; c < male[0].length; c++){
-                    System.out.print(male[r][c]+ " ");
-                }
-                System.out.println();
-            }
-            System.out.println();
 
 
         }catch(IOException e){
