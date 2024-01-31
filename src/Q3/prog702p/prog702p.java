@@ -9,7 +9,7 @@ import java.util.List;
 public class prog702p {
     public static void main(String[] args) {
         try{
-            Scanner input = new Scanner(new File("langdat/Prog702a.dat"));
+            Scanner input = new Scanner(new File("langdat/Prog701g.dat"));
             List<animal>list = new ArrayList<animal>();
 
             int num = input.nextInt();
@@ -25,7 +25,7 @@ public class prog702p {
                     int steps = input.nextInt();
                     animal e = new wallie(name, word, steps);
                     list.add(e);
-                }else if(num == 2){
+                }else if(num == 3){
                     String eword = input.next();
                     animal e = new beeper(name, word, eword);
                     list.add(e);
@@ -38,6 +38,7 @@ public class prog702p {
             int cnt =0;
             int cnt2 = 0;
             int cnt3 = 0;
+            String word = "";
 
 
             for (animal x : list){
@@ -46,7 +47,7 @@ public class prog702p {
                     cnt ++;
                 }
                 if (x instanceof beeper){
-                    String word = ((beeper)x).getEWord();
+                     word = ((beeper)x).getEWord();
                     cnt2++;
                 }
                 if (x instanceof wallie){
@@ -54,7 +55,9 @@ public class prog702p {
                     cnt3++;
                 }
             }
-            System.out.println("The average value of the Hicca fur");
+            System.out.println("The average value of the Hicca fur %.2f\n" + value / cnt);
+            System.out.println("The average number of steps taken by the Wallies is %.2f\n" + avgStep / cnt3);
+            System.out.println("The average size of the beepers word is " + word.length() / cnt2);
 
 
 
