@@ -19,17 +19,17 @@ public class prog465h {
                 for(int i = 0; i < mat[lcv].length; i++)
                     mat[lcv][i] = input.nextInt();
 
-            for(int lcv = 0; lcv < mat.length; lcv++){
-                for(int i = 0; i < mat[lcv].length;i++){
-                    System.out.print(mat[lcv][i] + " ");
-                    if(mat[lcv][i] > 0 || mat[lcv][i] < 0){
+            for (int[] ints : mat) {
+                for (int i = 0; i < ints.length; i++) {
+                    System.out.print(ints[i] + " ");
+                    if (ints[i] > 0 || ints[i] < 0) {
                         x++;
                     }
-                    if (x < 10 ){
+                    if (x < 10) {
                         System.out.println("The Original Matrix is Sparse");
-                    }else if (x == 10){
+                    } else if (x == 10) {
                         System.out.println("The Original Matrix and the Sparse Matrix are Equally Efficient");
-                    }else{
+                    } else {
                         System.out.println("The Original Matrix is Abundant");
                     }
                 }
