@@ -13,58 +13,57 @@ public class prog465h {
             int[][]mat = new int[5][6];
             int[][]sat = new int[5][6];
             int[][]rat = new int[5][6];
-            int x = 0;
+
 
             for(int lcv = 0; lcv < mat.length; lcv++)
                 for(int i = 0; i < mat[lcv].length; i++)
                     mat[lcv][i] = input.nextInt();
 
-            for (int[] ints : mat) {
-                for (int i = 0; i < ints.length; i++) {
-                    System.out.print(ints[i] + " ");
-                    if (ints[i] > 0 || ints[i] < 0) {
-                        x++;
-                    }
-                    if (x < 10) {
-                        System.out.println("The Original Matrix is Sparse");
-                    } else if (x == 10) {
-                        System.out.println("The Original Matrix and the Sparse Matrix are Equally Efficient");
-                    } else {
-                        System.out.println("The Original Matrix is Abundant");
+
+            for (int[] row : mat) {
+                for (int n : row)
+                    System.out.print(n + "\t");
+                System.out.println();
+            }
+            for(int lcv =1; lcv < mat.length; lcv++){
+                for(int i = 1; i < mat[0].length; lcv++){
+                    if (mat[lcv][i] != 0 ){
+                        System.out.println(lcv + " " + i + " " + mat[lcv][i]);
+
                     }
                 }
                 System.out.println();
             }
-
-
-
-
-
-
             System.out.println();
+
             for(int lcv = 0; lcv < sat.length; lcv++)
                 for(int i = 0; i < sat[lcv].length; i++)
                     sat[lcv][i] = input.nextInt();
-            for(int lcv = 0; lcv < sat.length; lcv++){
-                for(int i = 0; i < sat[lcv].length;i++){
-                    System.out.print(sat[lcv][i] + " ");
-                }
+
+            for (int[] row : sat) {
+                for (int n : row)
+                    System.out.print(n + "\t");
                 System.out.println();
             }
 
 
-
-
-            System.out.println();
             for(int lcv = 0; lcv < rat.length; lcv++)
                 for(int i = 0; i < rat[lcv].length; i++)
                     rat[lcv][i] = input.nextInt();
-            for(int lcv = 0; lcv < rat.length; lcv++){
-                for(int i = 0; i < rat[lcv].length;i++){
-                    System.out.print(rat[lcv][i] + " ");
-                }
+
+
+            for (int[] row : rat) {
+                for (int n : row)
+                    System.out.print(n + "\t");
                 System.out.println();
             }
+
+
+
+
+
+
+
 
 
 
