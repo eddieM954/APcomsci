@@ -13,6 +13,7 @@ public class prog465h {
             int[][]mat = new int[5][6];
             int[][]sat = new int[5][6];
             int[][]rat = new int[5][6];
+            int cnt = 10;
 
 
             for(int lcv = 0; lcv < mat.length; lcv++)
@@ -25,12 +26,12 @@ public class prog465h {
                     System.out.print(n + "\t");
                 System.out.println();
             }
-            for(int lcv =1; lcv < mat.length; lcv++){
-                for(int i = 1; i < mat[0].length; lcv++){
-                    if (mat[lcv][i] != 0 ){
-                        System.out.println(lcv + " " + i + " " + mat[lcv][i]);
+            for(int lcv =0; lcv < cnt; lcv++){
+                for(int i = 0; i < cnt; lcv++){
+                   if (mat[lcv][i] != 0 ){
+                       System.out.println(lcv + " " + i + " " + mat[lcv][i]);
 
-                    }
+                   }
                 }
                 System.out.println();
             }
