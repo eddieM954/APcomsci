@@ -26,8 +26,8 @@ public class prog465h {
                     System.out.print(n + "\t");
                 System.out.println();
             }
-            for(int lcv =0; lcv < cnt; lcv++){
-                for(int i = 0; i < cnt; lcv++){
+            for(int lcv =1; lcv < cnt; lcv++){
+                for(int i = 1; i < cnt; lcv++){
                    if (mat[lcv][i] != 0 ){
                        System.out.println(lcv + " " + i + " " + mat[lcv][i]);
 
@@ -36,6 +36,8 @@ public class prog465h {
                 System.out.println();
             }
             System.out.println();
+
+
 
             for(int lcv = 0; lcv < sat.length; lcv++)
                 for(int i = 0; i < sat[lcv].length; i++)
@@ -46,6 +48,18 @@ public class prog465h {
                     System.out.print(n + "\t");
                 System.out.println();
             }
+
+
+            for(int lcv =1; lcv < cnt; lcv++){
+                for(int i = 1; i < cnt; lcv++){
+                    if (sat[lcv][i] != 0 ){
+                        System.out.println(lcv + " " + i + " " + sat[lcv][i]);
+
+                    }
+                }
+                System.out.println();
+            }
+
 
 
             for(int lcv = 0; lcv < rat.length; lcv++)
@@ -59,7 +73,15 @@ public class prog465h {
                 System.out.println();
             }
 
+            for(int lcv =1; lcv < cnt; lcv++){
+                for(int i = 1; i < cnt; lcv++){
+                    if (rat[lcv][i] != 0 ){
+                        System.out.println(lcv + " " + i + " " + rat[lcv][i]);
 
+                    }
+                }
+                System.out.println();
+            }
 
 
 
