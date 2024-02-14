@@ -17,14 +17,32 @@ public class prog465h {
             for(int lcv = 0; lcv < mat.length; lcv++){
                 for(int i = 0; i < mat[0].length; i++){
                     mat[lcv][i]= input.nextInt();
-                        sat[lcv][i] = input.nextInt();
-                            rat[lcv][i] =input.nextInt();
                 }
             }
-            for(int lcv = 0; lcv < mat.length; lcv++){
-                for( int i = 0; i < mat[0].length; i++){
-
+            for(int lcv = 0; lcv < sat.length; lcv++){
+                for(int i = 0; i < sat[0].length; i++){
+                    sat[lcv][i]= input.nextInt();
                 }
+            }
+            for(int lcv = 0; lcv < rat.length; lcv++){
+                for(int i = 0; i < rat[0].length; i++){
+                    rat[lcv][i]= input.nextInt();
+                }
+            }
+            for (int[] row : mat){
+                for(int n : row)
+                    System.out.print(n + "\t");
+                System.out.println();
+            }
+            for (int[] row : sat){
+                for(int n : row)
+                    System.out.print(n + "\t");
+                System.out.println();
+            }
+            for (int[] row : rat){
+                for(int n : row)
+                    System.out.print(n + "\t");
+                System.out.println();
             }
 
 
