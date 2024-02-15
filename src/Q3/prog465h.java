@@ -32,6 +32,7 @@ public class prog465h {
             for (int[] row : mat){
                 for(int n : row)
                     System.out.print(n + "\t");
+
                 System.out.println();
             }
             for (int[] row : sat){
