@@ -46,7 +46,7 @@ public class Prog505w {
                     int cornEaten = input.nextInt();
                     int rides = input.nextInt();
                     double rideCost = input.nextDouble();
-                    Horse fred = new Horse(name, weight, hayEaten, cornEaten, rides, rideCost);
+                    Horse fred = new Horse(name, weight, cornEaten, hayEaten, rides, rideCost);
                     animals.add(fred);
                     hay-= hayEaten;
                     corn-=cornEaten;
@@ -57,7 +57,18 @@ public class Prog505w {
             // TODO: if there is enough food, cow that makes the most money
             //Income of the day
             double money = 0;
-
+            for(int lcv = 0; lcv < animals.size(); lcv++){
+                if(animals.get(lcv) instanceof Cow){
+                    money += (((Cow) animals.get(lcv)).getMilk() * .2);
+                }
+            }
+            for(int lcv = 0; lcv < animals.size(); lcv++){
+                if(animals.get(lcv) instanceof Horse){
+                    Horse horse = (Horse)animals.get(lcv);
+                    //money += horse.value(cornCost, hayCost);
+                }
+            }
+            System.out.println(money);
 
 
 
