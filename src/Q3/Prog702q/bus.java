@@ -7,4 +7,5 @@ public class bus extends vehicle{
         super(name, tires, value);
         busCity = city;
     }
+    public String getCity(){return busCity;}
 }
