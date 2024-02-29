@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-public class dfile {
+public class prod702q {
     public static void main(String[] args) {
         try{
             Scanner input = new Scanner(new File("langdat/prog702q.txt"));
@@ -17,23 +17,24 @@ public class dfile {
             while (type != 99){
                 String name = input.next();
                 int tires = input.nextInt();
-                double value = input.nextDouble();
+
                 if (type == 1){
+                    int value = input.nextInt();
                     vehicle p = new cars(name,tires, value);
                     list.add(p);
                 }else if (type == 2){
                     int miles = 0;
-                    vehicle p = new truck(name, tires, value, miles);
-                    double num2 = miles * .25;
-                    value = 50000 - num2;
+                    vehicle p = new truck(name, tires, miles);
+                    int num2 = miles /4;
+
 
                     list.add(p);
                 }else if(type == 3){
                     String city = "";
-                    vehicle p = new bus(name, tires, value, city);
+                    vehicle p = new bus(name, tires, city);
                     list.add(p);
                 }
-                System.out.println(list);
+
 
 
             }

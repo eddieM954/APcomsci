@@ -3,15 +3,15 @@ package Q3.Prog702q;
 public class vehicle {
     private String carName;
     private int carTires;
-    private double carValue;
+    private int carValue;
 
 
-    public vehicle(String name, int tires, double value){
+    public vehicle(String name, int tires){
         carName = name;
         carTires = tires;
-        carValue = value;
+        carValue = 0;
     }
     public String getName(){return carName;}
     public int getTires(){return carTires;}
-    public double getValue(){return carValue;}
+    public int getValue(){return carValue;}
 }

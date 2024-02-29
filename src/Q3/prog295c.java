@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class prog295c {
     public static void main(String[] args) {
         try{
+
             Scanner input = new Scanner(new File("langdat/merge1.dat"));
             Scanner input2 = new Scanner(new File("langdat/merge2.dat"));
             Scanner input3 = new Scanner(new File("langdat/merge3.dat"));
