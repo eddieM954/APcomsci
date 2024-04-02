@@ -7,8 +7,14 @@ public class MSOE2019 {
         String letters = input.nextLine();
         System.out.println("Enter a word: ");
         String line = input.nextLine();
-        for(int lcv = 0; lcv < line.length();lcv++ ){
+        int cnt = 0;
 
+        for(int lcv = 0; lcv < line.length();lcv++ ){
+            String s = line.substring(lcv,lcv+2);
+            if(s == letters){
+                cnt++;
+            }
         }
+        System.out.println(cnt);
     }
 }
