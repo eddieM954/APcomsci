@@ -10,11 +10,8 @@ public class MSOE2021 {
         String letter = input.nextLine();
         System.out.print("Enter a sentence: ");
         String sentence = input.nextLine();
-        List<String>list = new ArrayList<String>();
-        list.add(sentence);
-        for(int lcv = 0; lcv < list.size(); lcv++){
-            
-        }
+
+
 
 
     }

@@ -11,6 +11,7 @@ public class MSOE2019 {
 
         for(int lcv = 0; lcv < line.length();lcv++ ){
             String s = line.substring(lcv,lcv+2);
+
             if(s == letters){
                 cnt++;
             }
