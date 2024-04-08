@@ -1,4 +1,4 @@
-package Q3;
+package Q4;
 import java.util.Scanner;
 public class MSOE2019 {
     public static void main(String[] args) {
