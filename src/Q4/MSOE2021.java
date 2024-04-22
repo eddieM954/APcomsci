@@ -10,6 +10,17 @@ public class MSOE2021 {
         String letter = input.nextLine();
         System.out.print("Enter a sentence: ");
         String sentence = input.nextLine();
+        String line = sentence + input.nextLine();
+        String[] s = line.split(" ");
+
+        boolean tru = false;
+        for(String word : line){
+            if (word.substring(word.length()-1,word.length()).equals(letter)){
+                System.out.print(word);
+                tru = true;
+            }
+
+        }
 
 
 
